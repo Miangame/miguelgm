@@ -1,3 +1,59 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": "next/core-web-vitals",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "cy": true,
+    "JSX": true,
+    "RequestInit": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["*.json"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    // Prettier
+    "prettier/prettier": ["error"],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "newlines-between": "always",
+        "groups": [
+          ["builtin"],
+          ["external"],
+          ["parent"],
+          ["internal", "sibling", "index", "unknown"]
+        ]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      // enable the rule specifically for TypeScript files
+      "files": ["*.ts", "*.tsx"]
+    }
+  ]
 }
