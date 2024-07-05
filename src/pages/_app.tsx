@@ -1,11 +1,44 @@
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'styled-components'
+import { appWithTranslation } from 'next-i18next'
+import useDarkMode from 'use-dark-mode'
+import { useEffect, useState } from 'react'
 
-import { Layout } from './components/Layout/Layout.styled'
+import { Layout } from '../components/Layout/Layout.styled'
+import { ResetCSS } from '../components/ResetCSS/ResetCSS.styles'
+import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles.styled'
 
-export default function App({ Component, pageProps }: AppProps) {
+import Navbar from '@/components/Layout/components/Navbar/Navbar'
+import { darkTheme, lightTheme } from '@/theme/theme'
+import { DarkBackground } from '@/components/DarkBackground/DarkBackground.styled'
+
+const App = ({ Component, pageProps }: AppProps) => {
+  const [mounted, setMounted] = useState<boolean>(false)
+
+  const { value: isDarkMode } = useDarkMode(false, {
+    storageKey: 'miguelgm.darkMode'
+  })
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return <></>
+  }
+
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
+      {/* <Head /> */}
+      <ResetCSS />
+      <GlobalStyles $isDarkMode={isDarkMode} />
+      <DarkBackground $isDarkMode={isDarkMode} />
+      <Layout>
+        <Navbar />
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   )
 }
+
+export default appWithTranslation(App)
