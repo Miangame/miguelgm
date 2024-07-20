@@ -7,7 +7,11 @@ declare module 'styled-components' {
     colors: {
       black: string
       white: string
-      highlight: string
+      highlight1: string
+      highlight2: string
+      text: string
+      pillBackground: string
+      pillBorder: string
     }
 
     size: {

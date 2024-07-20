@@ -13,5 +13,12 @@ export const lightTheme = {
 }
 
 export const darkTheme = {
-  ...baseTheme
+  ...baseTheme,
+  colors: {
+    ...baseTheme.colors,
+    highlight1: '#FEF08A',
+    highlight2: '#FACC15',
+    text: '#D1D5DB',
+    pillBackground: '#1F2937'
+  }
 }

@@ -28,6 +28,7 @@ export const Wrapper = styled.div`
   margin-top: ${({ theme }) => theme.size.units(1)};
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 10;
 `
 

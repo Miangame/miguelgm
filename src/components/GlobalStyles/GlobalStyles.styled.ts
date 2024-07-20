@@ -70,4 +70,16 @@ export const GlobalStyles = createGlobalStyle<{ $isDarkMode?: boolean }>`
       }
     }
   `}
+
+  .highlight1 {
+    color: ${({ theme }) => theme.colors.highlight1}
+  }
+
+  .highlight2 {
+    color: ${({ theme }) => theme.colors.highlight2}
+  }
+
+  a {
+    color: inherit;
+  }
 `
