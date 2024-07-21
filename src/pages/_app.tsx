@@ -11,12 +11,13 @@ import { GlobalStyles } from '../components/GlobalStyles/GlobalStyles.styled'
 import Navbar from '@/components/Layout/components/Navbar/Navbar'
 import { darkTheme, lightTheme } from '@/theme/theme'
 import { DarkBackground } from '@/components/DarkBackground/DarkBackground.styled'
+import { DARK_MODE_KEY } from '@/constants/localStorage'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [mounted, setMounted] = useState<boolean>(false)
 
   const { value: isDarkMode } = useDarkMode(false, {
-    storageKey: 'miguelgm.darkMode'
+    storageKey: DARK_MODE_KEY
   })
 
   useEffect(() => {

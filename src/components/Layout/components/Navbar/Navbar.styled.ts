@@ -2,9 +2,15 @@ import styled, { keyframes } from 'styled-components'
 
 import SunIcon from '@/components/icons/SunIcon/SunIcon'
 import MoonIcon from '@/components/icons/MoonIcon/MoonIcon'
+import SpainFlagIcon from '@/components/icons/SpainFlagIcon/SpainFlagIcon'
+import UKFlagIcon from '@/components/icons/UKFlagIcon/UKFlagIcon'
 
 interface IsDarkModeProps {
   $isDarkMode: boolean
+}
+
+interface StyledLinkProps {
+  $isActive: boolean
 }
 
 const navShadow = keyframes`
@@ -42,9 +48,11 @@ export const StyledNavbar = styled.nav`
   border-radius: 9999px;
 `
 
-export const StyledLink = styled.a`
+export const StyledLink = styled.a<StyledLinkProps>`
   padding: ${({ theme }) => theme.size.units(1)};
-  color: inherit;
+  white-space: nowrap;
+  color: ${({ theme, $isActive }) =>
+    $isActive ? theme.colors.highlight2 : 'inherit'};
   text-decoration: none;
   font-size: ${({ theme }) => theme.size.units(1.75)};
   transition: ${({ theme }) =>
@@ -63,7 +71,7 @@ export const StyledLink = styled.a`
     )};
 
   &:hover {
-    color: ${({ theme }) => theme.colors.highlight};
+    color: ${({ theme }) => theme.colors.highlight2};
   }
 `
 
@@ -88,3 +96,7 @@ export const StyledSunIcon = styled(BaseIcon(SunIcon))<IsDarkModeProps>`
 export const StyledMoonIcon = styled(BaseIcon(MoonIcon))<IsDarkModeProps>`
   opacity: ${({ $isDarkMode }) => ($isDarkMode ? 1 : 0)};
 `
+
+export const StyledSpainFlagIcon = styled(BaseIcon(SpainFlagIcon))``
+
+export const StyledUKFlagIcon = styled(BaseIcon(UKFlagIcon))``

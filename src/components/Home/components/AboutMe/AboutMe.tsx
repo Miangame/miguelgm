@@ -11,7 +11,7 @@ const AboutMe = () => {
   const { t } = useTranslation('aboutMe')
 
   return (
-    <Section $hasReducedPaddings>
+    <Section id="about-me" $hasReducedPaddings>
       <SectionTitle title={t('title')} icon={ProfileCheckIcon} />
 
       <DescriptionWrapper>

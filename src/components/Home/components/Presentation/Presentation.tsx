@@ -17,7 +17,7 @@ const Presentation = () => {
   const { t } = useTranslation('presentation')
 
   return (
-    <Section $hasPaddings>
+    <Section id="presentation" $hasPaddings>
       <Wrapper>
         <StyledImage src="/img/profile.webp" />
         <StyledTitle>{t('title')}</StyledTitle>

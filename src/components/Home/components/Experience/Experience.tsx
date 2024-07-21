@@ -21,7 +21,7 @@ const Experience = () => {
   const { t } = useTranslation('experience')
 
   return (
-    <Section>
+    <Section id="experience">
       <SectionTitle title={t('title')} icon={BriefcaseIcon} />
 
       <JobsWrapper>

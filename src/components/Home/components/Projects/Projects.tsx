@@ -10,7 +10,7 @@ const Projects = () => {
   const { t } = useTranslation('projects')
 
   return (
-    <Section $hasReducedPaddings>
+    <Section id="projects" $hasReducedPaddings>
       <SectionTitle title={t('title')} icon={CodeIcon} />
     </Section>
   )

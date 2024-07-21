@@ -4,11 +4,11 @@ export const ROUTES = [
     label: 'navbar.label.experience',
     url: '/#experience'
   },
-  {
-    title: 'navbar.projects',
-    label: 'navbar.label.projects',
-    url: '/#projects'
-  },
+  // {
+  //   title: 'navbar.projects',
+  //   label: 'navbar.label.projects',
+  //   url: '/#projects'
+  // },
   {
     title: 'navbar.aboutMe',
     label: 'navbar.label.aboutMe',
