@@ -30,7 +30,7 @@ export const Section = styled.section<SectionProps>`
   padding-top: ${({ theme, $hasPaddings, $hasReducedPaddings }) =>
     $hasPaddings || $hasReducedPaddings ? theme.size.units(8) : undefined};
   padding-bottom: ${({ theme, $hasPaddings, $hasReducedPaddings }) =>
-    $hasPaddings || $hasReducedPaddings ? theme.size.units(8) : undefined};
+    $hasReducedPaddings ? 0 : $hasPaddings ? theme.size.units(8) : undefined};
 
   ${media.greaterThan('sm')`
     max-width: ${({ theme }: DefaultTheme) => theme.size.units(112)};
@@ -45,7 +45,9 @@ export const Section = styled.section<SectionProps>`
       $hasPaddings,
       $hasReducedPaddings
     }: SectionProps & DefaultTheme) =>
-      getPadding(theme, $hasPaddings, $hasReducedPaddings)};
+      $hasReducedPaddings
+        ? 0
+        : getPadding(theme, $hasPaddings, $hasReducedPaddings)};
   `}
 
   ${media.greaterThan('md')`

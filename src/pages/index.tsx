@@ -10,6 +10,7 @@ const Home = () => {
     <>
       <Presentation />
       <Experience />
+      {/* <Projects /> */}
       <AboutMe />
     </>
   )
@@ -23,6 +24,7 @@ export async function getStaticProps({ locale = 'en' }: { locale: string }) {
         'navbar',
         'presentation',
         'experience',
+        'projects',
         'aboutMe'
       ]))
     }
