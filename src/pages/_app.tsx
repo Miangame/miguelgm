@@ -12,6 +12,7 @@ import Navbar from '@/components/Layout/components/Navbar/Navbar'
 import { darkTheme, lightTheme } from '@/theme/theme'
 import { DarkBackground } from '@/components/DarkBackground/DarkBackground.styled'
 import { DARK_MODE_KEY } from '@/constants/localStorage'
+import Head from '@/components/Head/Head'
 
 const App = ({ Component, pageProps }: AppProps) => {
   const [mounted, setMounted] = useState<boolean>(false)
@@ -30,7 +31,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
-      {/* <Head /> */}
+      <Head />
       <ResetCSS />
       <GlobalStyles $isDarkMode={isDarkMode} />
       <DarkBackground $isDarkMode={isDarkMode} />
