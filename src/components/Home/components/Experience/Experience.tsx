@@ -2,6 +2,7 @@ import { memo } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { Section } from '../../Home.styled'
+import SectionTitle from '../SectionTitle/SectionTitle'
 
 import {
   Company,
@@ -11,21 +12,17 @@ import {
   JobsWrapper,
   JobTitle,
   Role,
-  StyledBriefcaseIcon,
-  StyledDotIcon,
-  Title
+  StyledDotIcon
 } from './Experience.styled'
 import { EXPERIENCE } from '@/constants/experience'
+import BriefcaseIcon from '@/components/icons/BriefcaseIcon/BriefcaseIcon'
 
 const Experience = () => {
   const { t } = useTranslation('experience')
 
   return (
     <Section>
-      <Title>
-        <StyledBriefcaseIcon />
-        {t('title')}
-      </Title>
+      <SectionTitle title={t('title')} icon={BriefcaseIcon} />
 
       <JobsWrapper>
         {EXPERIENCE.map((job, index) => (

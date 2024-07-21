@@ -20,6 +20,8 @@ export const darkTheme = {
     highlight2: '#FACC15',
     text: '#D1D5DB',
     pillBackground: '#1F2937',
-    experienceLine: '#ffffff26'
+    experienceLine: '#ffffff26',
+    aboutMePhotoBackground: '#eab3080d',
+    aboutMePhotoShadow: 'rgba(255, 255, 255, 0.2)'
   }
 }

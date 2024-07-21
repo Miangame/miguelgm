@@ -13,6 +13,8 @@ declare module 'styled-components' {
       pillBackground: string
       pillBorder: string
       experienceLine: string
+      aboutMePhotoBackground: string
+      aboutMePhotoShadow: string
     }
 
     size: {

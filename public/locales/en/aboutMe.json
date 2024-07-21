@@ -1,0 +1,5 @@
+{
+  "title": "About me",
+  "description1": "My name is Miguel Ángel, and I discovered programming by chance at university. Since then, I've been passionate about solving problems and creating solutions through code. Currently, <span class='highlight1'>I work as Frontend Software Engineer at Genially</span>, where I am dedicated to innovate and improve the user experience.",
+  "description2": "Some of my achievements include <span class='highlight1'> collaborating in several open source projects, among them the <a href='https://github.com/midudev/covid-vacuna' target='_blank' rel='noopener noreferrer'>'covid-vacuna'</a></span> website powered by Midudev."
+}

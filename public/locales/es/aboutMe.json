@@ -1,0 +1,5 @@
+{
+  "title": "Sobre mí",
+  "description1": "Me llamo Miguel Ángel, y descubrí la programación por casualidad en la universidad. Desde entonces, me apasiona resolver problemas y crear soluciones a través del código. Actualmente, trabajo como <span class='highlight1'>Frontend Software Engineer en Genially</span>, donde me dedico a innovar y mejorar la experiencia del usuario.",
+  "description2": "Algunos de mis logros incluyen <span class='highlight1'> colaborar en distintos proyectos de código abierto, entre ellos la web <a href='https://github.com/midudev/covid-vacuna' target='_blank' rel='noopener noreferrer'>'covid-vacuna'</a></span> impulsada por Midudev."
+}

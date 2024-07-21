@@ -6,5 +6,7 @@ export const colors = {
   text: '#4B5563',
   pillBackground: '#F3F4F6',
   pillBorder: '#4B5563',
-  experienceLine: '#0003'
+  experienceLine: '#0003',
+  aboutMePhotoBackground: '#0003',
+  aboutMePhotoShadow: 'rgba(0, 0, 0, 0.7)'
 }
