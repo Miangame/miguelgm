@@ -4,6 +4,7 @@ import { memo } from 'react'
 import Presentation from '@/components/Home/components/Presentation/Presentation'
 import Experience from '@/components/Home/components/Experience/Experience'
 import AboutMe from '@/components/Home/components/AboutMe/AboutMe'
+import Footer from '@/components/Home/components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Experience />
       {/* <Projects /> */}
       <AboutMe />
+      <Footer />
     </>
   )
 }
@@ -25,7 +27,8 @@ export async function getStaticProps({ locale = 'en' }: { locale: string }) {
         'presentation',
         'experience',
         'projects',
-        'aboutMe'
+        'aboutMe',
+        'footer'
       ]))
     }
   }

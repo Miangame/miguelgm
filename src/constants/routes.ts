@@ -1,8 +1,12 @@
+export const EXPEIENCE_URL = '/#experience'
+export const ABOUT_ME_URL = '/#about-me'
+export const CONTACT_URL = 'mailto:miangame1@gmail.com'
+
 export const ROUTES = [
   {
     title: 'navbar.experience',
     label: 'navbar.label.experience',
-    url: '/#experience'
+    url: EXPEIENCE_URL
   },
   // {
   //   title: 'navbar.projects',
@@ -12,11 +16,11 @@ export const ROUTES = [
   {
     title: 'navbar.aboutMe',
     label: 'navbar.label.aboutMe',
-    url: '/#about-me'
+    url: ABOUT_ME_URL
   },
   {
     title: 'navbar.contact',
     label: 'navbar.label.contact',
-    url: 'mailto:miangame1@gmail.com'
+    url: CONTACT_URL
   }
 ]
