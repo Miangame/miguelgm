@@ -1,0 +1,23 @@
+{
+  "title": "Work experience",
+  "genially": {
+    "role": "Frontend Software Engineer",
+    "date": "July 2021 - Present",
+    "description": "Responsible for creating and maintaining the company's Design System, ensuring consistency across all digital products. Developed complex interfaces from Figma designs, transforming concepts into engaging user experiences. Created interactive components and questions, allowing active audience participation and a personalized experience. Also contributed to a live-play system."
+  },
+  "wealize": {
+    "role": "Software Engineer",
+    "date": "July 2019 - July 2021",
+    "description": "I developed user interfaces with Typescript, Reactjs/Nextjs, and Styled components, using design systems like Ant.design. Conducted quality control with Cypress and unit tests. Created REST APIs with Python+Django, implemented payment systems with Stripe and PayPal, and managed blockchain tokens with Smart Contracts. Utilized CI/CD with GithubActions, Docker for deployments, and maintained clean code and architecture."
+  },
+  "eurotransportcar": {
+    "role": "Full Stack Developer",
+    "date": "June 2018 - July 2019",
+    "description": "I designed and created interfaces for new functionalities using Symfony, Twig, and Bootstrap. Developed REST APIs with Symfony and implemented web functionality with JQuery. Refactored monolithic code and deployed to production on VPS servers. Automated server tasks with Bash and created complex SQL queries."
+  },
+  "sopinet": {
+    "role": "Trainee Developer",
+    "date": "March 2018 - June 2018",
+    "description": "I created interfaces for internal company tools using Symfony and Twig. Developed REST APIs with Symfony and maintained a Telegram bot built with Symfony."
+  }
+}

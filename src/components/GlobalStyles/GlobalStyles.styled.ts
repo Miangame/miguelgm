@@ -17,6 +17,10 @@ export const GlobalStyles = createGlobalStyle<{ $isDarkMode?: boolean }>`
     background-color: ${({ $isDarkMode }) => ($isDarkMode ? 'rgb(17, 17, 17)' : '#F0F0FD')};
   }
 
+  #__next {
+    position: relative;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;

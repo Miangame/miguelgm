@@ -26,4 +26,8 @@ export const Section = styled.section<SectionProps>`
   ${media.greaterThan('md')`
     max-width: ${({ theme }: DefaultTheme) => theme.size.units(84)};
   `}
+
+  ${media.greaterThan('lg')`
+    max-width: ${({ theme }: DefaultTheme) => theme.size.units(112)};
+  `}
 `

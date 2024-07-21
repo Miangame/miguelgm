@@ -1,0 +1,23 @@
+{
+  "title": "Experiencia laboral",
+  "genially": {
+    "role": "Frontend Software Engineer",
+    "date": "Julio 2021 - Actualidad",
+    "description": "Responsable de la creación y mantenimiento del Sistema de Diseño de la empresa, asegurando la consistencia en todos los productos digitales. Desarrollé interfaces complejas a partir de diseños de Figma, transformando conceptos en experiencias de usuario atractivas. Creé componentes interactivos y preguntas, permitiendo la participación activa de la audiencia y una experiencia personalizada. También contribuí a un sistema de juego en vivo."
+  },
+  "wealize": {
+    "role": "Software Engineer",
+    "date": "Julio 2019 - Julio 2021",
+    "description": "Creé interfaces de usuario con Typescript, Reactjs/Nextjs y Styled components, utilizando sistemas de diseño como Ant.design. Realicé control de calidad con Cypress y pruebas unitarias. Desarrollé APIs REST con Python+Django, implementé sistemas de pago con Stripe y PayPal, y gestioné tokens en blockchain con Smart Contracts. Utilicé CI/CD con GithubActions, Docker para despliegues y mantuve código limpio y arquitectura limpia."
+  },
+  "eurotransportcar": {
+    "role": "Full Stack Developer",
+    "date": "Junio 2018 - Julio 2019",
+    "description": "Diseñé y creé interfaces para nuevas funcionalidades utilizando Symfony, Twig y Bootstrap. Desarrollé APIs REST con Symfony e implementé funcionalidad web con JQuery. Refactoricé código monolítico y desplegué en servidores VPS. Automatizé tareas de servidor con Bash y creé consultas SQL complejas."
+  },
+  "sopinet": {
+    "role": "Trainee Developer",
+    "date": "Marzo 2018 - Junio 2018",
+    "description": "Creé interfaces para herramientas internas de la empresa utilizando Symfony y Twig. Desarrollé APIs REST con Symfony y mantuve un bot de Telegram hecho con Symfony."
+  }
+}

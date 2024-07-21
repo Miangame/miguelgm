@@ -19,6 +19,7 @@ export const darkTheme = {
     highlight1: '#FEF08A',
     highlight2: '#FACC15',
     text: '#D1D5DB',
-    pillBackground: '#1F2937'
+    pillBackground: '#1F2937',
+    experienceLine: '#ffffff26'
   }
 }

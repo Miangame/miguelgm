@@ -5,5 +5,6 @@ export const colors = {
   highlight2: '#FACC15',
   text: '#4B5563',
   pillBackground: '#F3F4F6',
-  pillBorder: '#4B5563'
+  pillBorder: '#4B5563',
+  experienceLine: '#0003'
 }
