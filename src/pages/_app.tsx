@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 import { appWithTranslation } from 'next-i18next'
 import useDarkMode from 'use-dark-mode'
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Layout } from '../components/Layout/Layout.styled'
 import { ResetCSS } from '../components/ResetCSS/ResetCSS.styles'
@@ -38,6 +39,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Layout>
         <Navbar />
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </ThemeProvider>
   )
