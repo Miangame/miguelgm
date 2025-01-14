@@ -11,8 +11,11 @@ export const Wrapper = styled.footer`
   flex-direction: column;
   justify-content: space-between;
   color: ${({ theme }) => theme.colors.text};
+  font-size: ${({ theme }) => theme.size.units(1.5)};
+  gap: ${({ theme }) => theme.size.units(2)};
 
   ${media.greaterThan('sm')`
+    font-size: ${({ theme }: DefaultTheme) => theme.size.units(2)};
     max-width: ${({ theme }: DefaultTheme) => theme.size.units(112)};
     flex-direction: row;
   `}
@@ -30,8 +33,12 @@ export const Info = styled.div``
 
 export const Links = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: ${({ theme }) => theme.size.units(2)};
+
+  ${media.greaterThan('sm')`
+    justify-content: center;
+  `}
 `
 
 export const StyledLink = styled.a`

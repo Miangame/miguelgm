@@ -8,5 +8,6 @@ export const colors = {
   pillBorder: '#4B5563',
   experienceLine: '#0003',
   aboutMePhotoBackground: '#0003',
-  aboutMePhotoShadow: 'rgba(0, 0, 0, 0.7)'
+  aboutMePhotoShadow: 'rgba(0, 0, 0, 0.7)',
+  projectDescription: '#374151'
 }

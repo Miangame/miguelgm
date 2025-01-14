@@ -1,3 +1,12 @@
 {
-  "title": "Projects"
+  "title": "Projects",
+  "project1": {
+    "title": "3D Villafranca",
+    "description": "Web application for ordering 3D printed models. Created from scratch using Next.js, Styled Components and SWR"
+  },
+  "project2": {
+    "title": "Vanacond trainer",
+    "description": "Web application for promoting personal training and nutrition. Created from scratch using Next.js, Styled Components and i18next"
+  },
+  "preview": "Preview"
 }

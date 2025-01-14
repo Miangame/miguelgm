@@ -22,6 +22,7 @@ export const darkTheme = {
     pillBackground: '#1F2937',
     experienceLine: '#ffffff26',
     aboutMePhotoBackground: '#eab3080d',
-    aboutMePhotoShadow: 'rgba(255, 255, 255, 0.2)'
+    aboutMePhotoShadow: 'rgba(255, 255, 255, 0.2)',
+    projectDescription: '#9ca3af'
   }
 }

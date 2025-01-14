@@ -5,13 +5,14 @@ import Presentation from '@/components/Home/components/Presentation/Presentation
 import Experience from '@/components/Home/components/Experience/Experience'
 import AboutMe from '@/components/Home/components/AboutMe/AboutMe'
 import Footer from '@/components/Home/components/Footer/Footer'
+import Projects from '@/components/Home/components/Projects/Projects'
 
 const Home = () => {
   return (
     <>
       <Presentation />
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
       <AboutMe />
       <Footer />
     </>

@@ -1,3 +1,12 @@
 {
-  "title": "Proyectos"
+  "title": "Proyectos",
+  "project1": {
+    "title": "3D Villafranca",
+    "description": "Aplicación web para pedir modelos 3D impresos. Creada desde cero usando Next.js, Styled Components y SWR"
+  },
+  "project2": {
+    "title": "Vanacond trainer",
+    "description": "Aplicación web para promocionar entrenamiento personal y nutrición. Creada desde cero usando Next.js, Styled Components e i18next"
+  },
+  "preview": "Vista previa"
 }

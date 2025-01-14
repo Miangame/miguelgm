@@ -15,6 +15,7 @@ declare module 'styled-components' {
       experienceLine: string
       aboutMePhotoBackground: string
       aboutMePhotoShadow: string
+      projectDescription: string
     }
 
     size: {

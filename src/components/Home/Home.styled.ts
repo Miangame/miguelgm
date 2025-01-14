@@ -33,7 +33,7 @@ export const Section = styled.section<SectionProps>`
     $hasReducedPaddings ? 0 : $hasPaddings ? theme.size.units(8) : undefined};
 
   ${media.greaterThan('sm')`
-    max-width: ${({ theme }: DefaultTheme) => theme.size.units(112)};
+    max-width: ${({ theme }: DefaultTheme) => theme.size.units(80)};
     padding-top: ${({
       theme,
       $hasPaddings,
