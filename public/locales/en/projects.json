@@ -8,5 +8,10 @@
     "title": "Vanacond trainer",
     "description": "Web application for promoting personal training and nutrition. Created from scratch using Next.js, Styled Components and i18next"
   },
-  "preview": "Preview"
+  "project3": {
+    "title": "Mercaprice",
+    "description": "Web application for tracking prices of Mercadona products. Uses Node scripts to keep prices and products updated"
+  },
+  "preview": "Preview",
+  "github": "GitHub"
 }

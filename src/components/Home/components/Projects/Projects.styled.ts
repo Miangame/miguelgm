@@ -74,6 +74,7 @@ export const ProjectDescription = styled.p`
 export const ProjectLinks = styled.div`
   display: flex;
   align-items: center;
+  gap: ${({ theme }) => theme.size.units(2)};
 `
 
 export const StyledLink = styled(Link)`

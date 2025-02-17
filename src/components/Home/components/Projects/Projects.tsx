@@ -20,6 +20,8 @@ import {
   StyledLink,
   Tag
 } from './Projects.styled'
+import NodejsIcon from '@/components/icons/NodejsIcon/NodejsIcon'
+import GithubIcon from '@/components/icons/GithubIcon/GithubIcon'
 
 const TAGS = {
   NEXT: {
@@ -31,10 +33,23 @@ const TAGS = {
     name: 'Styled Components',
     bgColor: '#D976FF',
     icon: StyledComponentsIcon
+  },
+  NODE: {
+    name: 'Node.js',
+    bgColor: '#355447',
+    icon: NodejsIcon
   }
 }
 
 const PROJECTS = [
+  {
+    title: 'project3.title',
+    description: 'project3.description',
+    link: 'https://mercaprice.es/',
+    github: 'https://github.com/Miangame/mercaprice',
+    image: '/img/mercaprice.webp',
+    tags: [TAGS.NEXT, TAGS.STYLED_COMPONENTS, TAGS.NODE]
+  },
   {
     title: 'project1.title',
     description: 'project1.description',
@@ -74,15 +89,16 @@ const Projects = () => {
             </ProjectTags>
             <ProjectDescription>{t(project.description)}</ProjectDescription>
             <ProjectLinks>
-              {/* {project.github && (
-                <Link
+              {project.github && (
+                <StyledLink
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <GithubIcon />
                   {t('github')}
-                </Link>
-              )} */}
+                </StyledLink>
+              )}
 
               {project.link && (
                 <StyledLink
