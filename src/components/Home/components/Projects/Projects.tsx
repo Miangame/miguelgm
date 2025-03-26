@@ -22,6 +22,7 @@ import {
 } from './Projects.styled'
 import NodejsIcon from '@/components/icons/NodejsIcon/NodejsIcon'
 import GithubIcon from '@/components/icons/GithubIcon/GithubIcon'
+import AiIcon from '@/components/icons/AiIcon/AiIcon'
 
 const TAGS = {
   NEXT: {
@@ -38,10 +39,23 @@ const TAGS = {
     name: 'Node.js',
     bgColor: '#355447',
     icon: NodejsIcon
+  },
+  AI: {
+    name: 'AI',
+    bgColor: '#857f5e',
+    icon: AiIcon
   }
 }
 
 const PROJECTS = [
+  {
+    title: 'project4.title',
+    description: 'project4.description',
+    link: 'https://listifyapp.vercel.app/',
+    github: 'https://github.com/Miangame/listify',
+    image: '/img/listify.webp',
+    tags: [TAGS.NEXT, TAGS.STYLED_COMPONENTS, TAGS.AI]
+  },
   {
     title: 'project3.title',
     description: 'project3.description',

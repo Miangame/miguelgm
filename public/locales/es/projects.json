@@ -12,6 +12,10 @@
     "title": "Mercaprice",
     "description": "Aplicación web para hacer seguimiento de precios de los productos de Mercadona. Usa scripts de Node para mantener actualizados los precios y productos"
   },
+  "project4": {
+    "title": "Listify",
+    "description": "Aplicación web para crear listas de reproducción de Spotify a partir de canciones generadas por IA. Usa Spotify y chatgpt API"
+  },
   "preview": "Vista previa",
   "github": "GitHub"
 }

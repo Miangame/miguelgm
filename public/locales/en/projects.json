@@ -12,6 +12,10 @@
     "title": "Mercaprice",
     "description": "Web application for tracking prices of Mercadona products. Uses Node scripts to keep prices and products updated"
   },
+  "project4": {
+    "title": "Listify",
+    "description": "Web application for create Spotify playlist from AI generated songs. Uses Spotify and chatgpt API"
+  },
   "preview": "Preview",
   "github": "GitHub"
 }
