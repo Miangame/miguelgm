@@ -13,6 +13,11 @@ const HeadDefaultMetatags = () => (
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover"
     />
+    <script
+      defer
+      src="https://umami.miguelgm.dev/script.js"
+      data-website-id="adecf921-0072-4de1-b83d-8ecc56679523"
+    ></script>
   </Head>
 )
 
